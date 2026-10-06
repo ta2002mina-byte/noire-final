@@ -2,6 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 
+import { authorize } from "@/lib/auth/session";
 import { toFieldErrors, readString, type FormState } from "@/lib/actions/state";
 import type { CreateReservationState } from "@/lib/constants/reservation-state";
 import { getRestaurant } from "@/lib/data/restaurant";
